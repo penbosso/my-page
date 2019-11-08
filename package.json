@@ -7,7 +7,7 @@
     "start": "babel-node buildScripts/srcServer.js",
     "prestart": "babel-node buildScripts/startMessage.js",
     "prebuild": "rimraf ./dist $$ mkdir dist",
-    "2build": "rimraf ./dist && mkdir dist && cp -r ./src/css ./dist/css && cp -r ./src/js ./dist/js && cp -r ./src/img ./dist/img && cp ./src/index.html ./dist/index.html",
+    "2build": "rimraf ./dist && mkdir dist && cp -r ./src/css ./dist/css && cp -r ./src/js ./dist/js && cp -r ./src/img ./dist/img && cp ./src/index.html ./dist/index.html && cp ./CNAME ./dist/CNAME",
     "build": "babel-node buildScripts/build.js",
     "test": "test",
     "deploy": "surge ./dist"
